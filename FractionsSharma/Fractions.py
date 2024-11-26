@@ -22,9 +22,7 @@ if abs(numerator) < abs(denominator):
 else:
     # Calculate the whole number and remainder for mixed fraction
     whole_number = (int)(numerator / denominator)
-    print(whole_number)
     remainder = abs(numerator) % abs(denominator)
-    print(remainder)
     
     # Display improper fraction results
     if remainder == 0:
