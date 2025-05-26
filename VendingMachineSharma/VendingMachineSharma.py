@@ -1,3 +1,6 @@
+
+
+
 def format_change(cents):
     quarters = cents // 25
     cents %= 25
@@ -48,16 +51,17 @@ def vending_machine():
                 continue
                 
             print("\nIf you would like to purchase:")
-            print("Product A type '1', (Price = $1.00)")
-            print("Product B type '2', (Price = $1.25)")
-            print("Product C type '3', (Price = $1.50)")
-            print("Product D type '4', (Price = $1.75)")
-            print("Product E type '5', (Price = $2.00)")
+            print("Skittles - type '1' (Price = $1.00)")
+            print("Reese’s - type '2' (Price = $1.19)")
+            print("M & M - type '3' (Price = $1.50)")
+            print("Chex Mix - type '4' (Price = $0.99)")
+            print("Honey Bun - type '5' (Price = $1.99)")
+
             
             print("\nYour enter is:")
             choice = int(input())
             
-            prices = {1: 1.00, 2: 1.25, 3: 1.50, 4: 1.75, 5: 2.00}
+            prices = {1: 1.00, 2: 1.19, 3: 1.50, 4: 0.99, 5: 1.99}
             if choice in prices:
                 price = prices[choice]
                 print("\n" + "*" * 10 + f" The item costs ${price:.2f} " + "*" * 10)
